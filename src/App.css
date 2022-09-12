@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +36,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+  margin-top: 30px;
+}
+
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+  color: var(--bs-btn-disabled-color);
+  pointer-events: none;
+  background-color: var(--bs-btn-disabled-bg);
+  border-color: var(--bs-btn-disabled-border-color);
+  opacity: var(--bs-btn-disabled-opacity);
+  margin-top: 20px;
+  
+}
+
+.add-note-heading{
+  margin: auto;
+  text-align: center;
+  font-family: Cinzel, serif;
+  font-size: 46px;
+}
+
+.my-5 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.add-note{
+  margin: auto;
+  width: 60%;
+  font-family: Cinzel, serif;
+  font-size: 16px;
+}
+.login-body{
+  max-width: 400px;
+  margin-left: 29%;
+}
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  /* background-color: antiquewhite; */
+  background: rgba(0, 0, 0, 0.7) url(./images/img2-background.jpg);
 }

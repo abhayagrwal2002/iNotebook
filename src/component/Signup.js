@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
+import '../App.css';
 
 
 const Signup = (props) => {
-    const [credentials, setCredentials] = useState({ name:"",email: "", password: "",cpassword:"" })
+    const [credentials, setCredentials] = useState({ name:"",email: "", password: "" })
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
@@ -35,7 +36,9 @@ const Signup = (props) => {
     }
 
     return (
-        <div>
+        <div className='login-body'>
+            <h2 className='add-note-heading'>Sign Up</h2>
+            <br/>
             <form onSubmit={handleSubmit}>
             <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
@@ -50,12 +53,9 @@ const Signup = (props) => {
                     <label htmlFor="password" className="form-label">Password</label>
                     <input type="password" className= "form-control" value={credentials.password} onChange={onChange} name="password" id="password" minLength={5} required/>
                 </div>
-                <div className="mb-3">
-                    <label htmlFor="cpassword" className="form-label">Confirm Password</label>
-                    <input type="password" className= "form-control" value={credentials.cpassword} onChange={onChange} name="cpassword" id="cpassword" minLength={5} required />
-                </div>
 
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit" className="btn btn-primary">Signup</button>
+                <Link className="btn btn-primary mx-1" to="/login" role="button">Login</Link>
             </form>
         </div>
     )

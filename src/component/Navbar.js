@@ -34,8 +34,8 @@ function Navbar() {
         </li>
       </ul>
       {!localStorage.getItem('token')?<form className="d-flex"> 
-          <Link className="btn btn-primary mx-1" to="/login" role="button">Login</Link>
-          <Link className="btn btn-primary mx-1" to="/signup" role="button">Signup</Link>
+          {/* <Link className="btn btn-primary mx-1" to="/login" role="button">Login</Link> */}
+          {/* <Link className="btn btn-primary mx-1" to="/signup" role="button">Signup</Link> */}
       </form>:<button className='btn btn-primary' onClick={handleLogout}>Logout</button>}
     </div>
   </div>

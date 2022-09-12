@@ -5,7 +5,7 @@ const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 var fetchuser = require('../middleware/fetchuser');
-const JWT_SECRET = 'Harryisagoodb$oy';
+const JWT_SECRET = 'xyz';
 
 
 

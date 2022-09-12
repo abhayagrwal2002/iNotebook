@@ -62,8 +62,13 @@ const Notes = (props) => {
                                     <input type="text" className="form-control" id="edescription" name="edescription" value={note.edescription} onChange={onChange} />
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="tag" className="form-label">Tag</label>
-                                    <input type="text" className="form-control" id="etag" name="etag" value={note.etag} onChange={onChange} />
+                                <label htmlFor="inputState" className="form-label">Tag</label>
+                                <select id="tag" className="form-control" value={note.tag} name="tag" onChange={onChange} >
+                                <option selected>General</option>
+                                <option selected>Personal</option>
+                                <option selected>Business</option>
+                                <option selected>Education</option>
+                                </select>
                                 </div>
 
                             </form>
